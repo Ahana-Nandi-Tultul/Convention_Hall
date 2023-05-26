@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
 
         }
+
         .carousel .item {
             height: 500px;
         }
@@ -60,7 +64,7 @@
     <!-- navbar end -->
 
     <!-- Slide Start -->
-    <div id="carouselExampleCaptions" class="carousel slide" style="height:800px;">
+    <div id="carouselExampleCaptions" class="carousel slide mb-3">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -70,7 +74,7 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active item" >
+            <div class="carousel-item active item">
                 <img src="images/banner.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
                     <h5 class="display-3">The perfect venue for your
@@ -81,9 +85,9 @@
                 </div>
             </div>
             <div class="carousel-item item">
-                <img src="images/" class="d-block w-100" alt="...">
+                <img src="images/banner.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <h5 class="display-md-3">The perfect venue for your
+                    <h5 class="display-3">The perfect venue for your
                         next event</h5>
                     <p class="text-light h6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                         Velit officia consequat duis enim velit </p>
@@ -91,9 +95,9 @@
                 </div>
             </div>
             <div class="carousel-item item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="images/banner.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <h5 class="display-md-3">The perfect venue for your
+                    <h5 class="display-3">The perfect venue for your
                         next event</h5>
                     <p class="text-light h6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                         Velit officia consequat duis enim velit </p>
@@ -113,8 +117,47 @@
         </button>
     </div>
     <!-- Slide end -->
+
+    <!-- Precious section start -->
+    <div class="position-relative">
+        <div class="container my-5">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-evenly flex-column-reverse flex-md-row align-items-center">
+
+                    <img src="images/wedding.png" alt="" class="w-100 img-fluid me-3">
+
+                    <div class="precious my-3">
+                        <div>
+                            <h2 class="h2">Every moment is Precious </h2>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <button class="btn btn-primary px-4 py-2">Explore our album <i class="fa fa-arrow-right"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toast-container position-absolute top-50 end-0 p-3">
+            <div class="toast fade show">
+
+                <div class="toast-body text-center border-start border-primary border-4">
+                    <span> <i class="fa fa-gift fa-2x  text-primary" aria-hidden="true"></i>    20% off on next booking</span><button type="button" class="btn-close"
+                        data-bs-dismiss="toast"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Precious section end -->
     <!-- bootstrap JS -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".toast").toast({
+                autohide: false
+            });
+        });
+    </script>
 </body>
 
 </html>
